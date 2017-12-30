@@ -15,7 +15,8 @@ var grammar = {
   "@PLACE": [
     "@PLACE_FIRST_HALF @PLACE_SECOND_HALF @PLACE_TYPE",
     "@PLACE_FIRST_OR_SECOND_HALF_CAPITALIZED @PLACE_SECOND_HALF @PLACE_TYPE",
-    "@PLACE_FIRST_HALF @PLACE_FIRST_OR_SECOND_HALF_LOWERCASE @PLACE_TYPE"
+    "@PLACE_FIRST_HALF @PLACE_FIRST_OR_SECOND_HALF_LOWERCASE @PLACE_TYPE",
+    "@PLACE_FULL_NAME @PLACE_TYPE"
   ],
   "@NOUN": [
     "Admiration",
@@ -262,6 +263,25 @@ var grammar = {
     "Estate", //?
     "Manor" //?
   ],
+  "@PLACE_FULL_NAME": [
+    "Anglesey",
+    "Barlborough",
+    "Ballard",
+    "Biddulph",
+    "Blickling",
+    "Buttermere",
+    "Chastleton",
+    "Coombe",
+    "Gloucester",
+    "Greaves",
+    "Hailes",
+    "Hogwarts",
+    "Ightham",
+    "Moseley",
+    "Tyringham",
+    "Waddesdon",
+    "Winkworth"
+   ],
   "@FEMALE_NAME": [
     "Alice",
     "Alicia",
