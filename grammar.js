@@ -122,7 +122,7 @@ var grammar = {
     "Zombies"
   ],
   "@PLACE_FIRST_OR_SECOND_HALF_CAPITALIZED": [
-    "Cliff?", // ?
+    "Cliff", // ?
     "Chester",
     "Cross",
     "Don",
@@ -131,7 +131,7 @@ var grammar = {
     "Water"
   ],
   "@PLACE_FIRST_OR_SECOND_HALF_LOWERCASE": [
-    "cliff?", // ?
+    "cliff", // ?
     "chester",
     "cross",
     "don",
