@@ -2,12 +2,12 @@
 
 var grammar = {
   "@TITLE": [
-    "@NOUN",
-    "@NOUN and @NOUN",
+    "@NOUN", "@NOUN","@NOUN","@NOUN","@NOUN","@NOUN",
+    "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN",
     "@NOUN and @NOUN and @CREATURE",
-    "@PLACE",
-    "@FEMALE_NAME",
-    "@FEMALE_TITLE @FEMALE_NAME"
+    "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE",
+    "@FEMALE_NAME", "@FEMALE_NAME", "@FEMALE_NAME", "@FEMALE_NAME",
+    "@FEMALE_TITLE @FEMALE_NAME", "@FEMALE_TITLE @FEMALE_NAME"
   ],
   "@FEMALE_TITLE": [
     "Lady"
