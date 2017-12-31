@@ -113,6 +113,8 @@ var grammar = {
     [1, "Mermaids"],
     [1, "Pegasus"],
     [1, "Phoenixes"],
+    [1, "Robots"],
+    [1, "Sea Monsters"],
     [1, "the Loch Ness Monster"],
     [1, "Unicorns"],
     [2, "Vampires"],
