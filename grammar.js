@@ -2,21 +2,21 @@
 
 var grammar = {
   "@TITLE": [
-    "@NOUN", "@NOUN","@NOUN","@NOUN","@NOUN","@NOUN",
-    "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN", "@NOUN and @NOUN",
-    "@NOUN and @NOUN and @CREATURE",
-    "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE", "@PLACE",
-    "@FEMALE_NAME", "@FEMALE_NAME", "@FEMALE_NAME", "@FEMALE_NAME",
-    "@FEMALE_TITLE @FEMALE_NAME", "@FEMALE_TITLE @FEMALE_NAME"
+    ["@NOUN"],
+    ["@NOUN", " and ", "@NOUN"],
+    ["@NOUN", " and ", "@NOUN", " and ", "@CREATURE"],
+    ["@PLACE"],
+    ["@FEMALE_NAME"],
+    ["@FEMALE_TITLE", " ", "@FEMALE_NAME"]
   ],
   "@FEMALE_TITLE": [
-    "Lady"
+    ["Lady"]
   ],
   "@PLACE": [
-    "@PLACE_FIRST_HALF @PLACE_SECOND_HALF @PLACE_TYPE",
-    "@PLACE_FIRST_OR_SECOND_HALF_CAPITALIZED @PLACE_SECOND_HALF @PLACE_TYPE",
-    "@PLACE_FIRST_HALF @PLACE_FIRST_OR_SECOND_HALF_LOWERCASE @PLACE_TYPE",
-    "@PLACE_FULL_NAME @PLACE_TYPE"
+    ["@PLACE_FIRST_HALF", "@PLACE_SECOND_HALF", " ", "@PLACE_TYPE"],
+    ["@PLACE_FIRST_OR_SECOND_HALF_CAPITALIZED", "@PLACE_SECOND_HALF", " ", "@PLACE_TYPE"],
+    ["@PLACE_FIRST_HALF", "@PLACE_FIRST_OR_SECOND_HALF_LOWERCASE", " ", "@PLACE_TYPE"],
+    ["@PLACE_FULL_NAME", " ", "@PLACE_TYPE"]
   ],
   "@NOUN": [
     "Admiration",
@@ -252,7 +252,7 @@ var grammar = {
     "wood"
   ],
   "@PLACE_TYPE": [
-    "@QUESTIONABLE_PLACE_TYPE",
+    ["@QUESTIONABLE_PLACE_TYPE"],
     "Abbey",
     "Hall",
     "House",

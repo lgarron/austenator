@@ -7,12 +7,13 @@ var randomChoice = function(l) {
 }
 
 var expand = function(term) {
-  if (term[0] !== "@") {
-    return term;
+  if (Array.isArray(term)) {
+    return term.map(expand).join("");
   }
-  var subterms = randomChoice(grammar[term]).split(" ");
-  var nonEmpty = function(x){return x!=""};
-  return subterms.map(expand).filter(nonEmpty).join(" ")
+  if (term[0] === "@") {
+    return expand(randomChoice(grammar[term]));
+  }
+  return term;
 }
 
 var go = function() {
