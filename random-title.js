@@ -27,7 +27,6 @@ var weightedChoice = function(l) {
   var target  = randomValue(totalWeight);
   var cumulative = 0;
   for (var i in l) {
-    console.log(target, cumulative);
     cumulative += first(l[i]);
     if (cumulative >= target) {
       return l[i].slice(1);
