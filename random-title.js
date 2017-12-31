@@ -50,6 +50,6 @@ var expand = function(term) {
 }
 
 var go = function() {
-  $("#variation").textContent = expand("@PLACE_TYPE");
+  $("#variation").textContent = expand("@TITLE");
   $("#again").textContent = expand("@AGAIN");
 }
