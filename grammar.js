@@ -2,18 +2,18 @@
 
 var grammar = {
   "@TITLE": [
-    [1, "@NOUN"],
-    [1, "@NOUN", " and ", "@NOUN"],
+    [2, "@NOUN"],
+    [12, "@NOUN", " and ", "@NOUN"],
     [1, "@NOUN", " and ", "@NOUN", " and ", "@CREATURE"],
-    [1, "@PLACE"],
-    [1, "@FEMALE_NAME"],
+    [6, "@PLACE"],
+    [2, "@FEMALE_NAME"],
     [1, "@FEMALE_TITLE", " ", "@FEMALE_NAME"]
   ],
   "@FEMALE_TITLE": [
     [1, "Lady"]
   ],
   "@PLACE": [
-    [1, "@PLACE_FIRST_HALF", "@PLACE_SECOND_HALF", " ", "@PLACE_TYPE"],
+    [5, "@PLACE_FIRST_HALF", "@PLACE_SECOND_HALF", " ", "@PLACE_TYPE"],
     [1, "@PLACE_FIRST_OR_SECOND_HALF_CAPITALIZED", "@PLACE_SECOND_HALF", " ", "@PLACE_TYPE"],
     [1, "@PLACE_FIRST_HALF", "@PLACE_FIRST_OR_SECOND_HALF_LOWERCASE", " ", "@PLACE_TYPE"],
     [1, "@PLACE_FULL_NAME", " ", "@PLACE_TYPE"]
