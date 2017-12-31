@@ -103,25 +103,22 @@ var grammar = {
     [1, "Wit"]
   ],
   "@CREATURE": [
-    [1, "Angels"],
     [1, "Demons"],
     [1, "Dragons"],
     [1, "Elves"],
     [1, "Fairies"],
     [1, "Genies"],
     [1, "Ghosts"],
-    [1, "Giants"],
     [1, "Harpies"],
     [1, "Mermaids"],
     [1, "Pegasus"],
     [1, "Phoenixes"],
-    [1, "Pixies"],
     [1, "the Loch Ness Monster"],
     [1, "Unicorns"],
-    [1, "Vampires"],
-    [1, "Werewolves"],
+    [2, "Vampires"],
+    [2, "Werewolves"],
     [1, "Yetis"],
-    [1, "Zombies"]
+    [2, "Zombies"]
   ],
   "@PLACE_FIRST_OR_SECOND_HALF_CAPITALIZED": [
     [1, "Cliff"], // ?
