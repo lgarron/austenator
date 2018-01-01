@@ -24,7 +24,6 @@ var grammar = {
     [1, "Affinity"],
     [1, "Amity"],
     [1, "Amusement"],
-    [1, "Appreciation"], // ?
     [1, "Assent"],
     [1, "Attachment"],
     [1, "Blandishment"],
@@ -33,12 +32,10 @@ var grammar = {
     [1, "Circumstance"],
     [1, "Civility"],
     [1, "Comity"],
-    [1, "Commendation"],
     [1, "Comportment"],
     [1, "Condemnation"],
     [1, "Condescension"],
     [1, "Confidence"],
-    [1, "Consideration"], // ?
     [1, "Contempt"],
     [1, "Courtesy"],
     [1, "Discretion"],
@@ -55,7 +52,7 @@ var grammar = {
     [1, "Flattery"],
     [1, "Folly"],
     [1, "Fortitude"],
-    [1, "Fortune"], // ?
+    [1, "Fortune"],
     [1, "Freindship"],
     [1, "Gratitude"],
     [1, "Honour"],
@@ -63,7 +60,6 @@ var grammar = {
     [1, "Humour"],
     [1, "Inclination"],
     [1, "Indulgence"],
-    [1, "Influence"], // ?
     [1, "Inspiration"],
     [1, "Judgement"],
     [1, "Love"],
@@ -80,11 +76,10 @@ var grammar = {
     [1, "Pretense"],
     [1, "Pride"],
     [1, "Principles"],
-    [1, "Privilege"], // ?
-    [1, "Promise"], // ?
+    [1, "Privilege"],
     [1, "Prudence"],
     [1, "Regard"],
-    [1, "Respect"], // ?
+    [1, "Respect"],
     [1, "Satisfaction"],
     [1, "Sense"],
     [1, "Sensibility"],
@@ -92,12 +87,10 @@ var grammar = {
     [1, "Sincerity"],
     [1, "Speculation"],
     [1, "Superiority"],
-    [1, "Surprise"], // ?
     [1, "Temper"],
     [1, "Temperance"],
     [1, "Tranquillity"],
     [1, "Understanding"],
-    [1, "Valour"], // ?
     [1, "Vanity"],
     [1, "Virtue"],
     [1, "Wit"]
@@ -123,22 +116,26 @@ var grammar = {
     [2, "Zombies"]
   ],
   "@PLACE_FIRST_OR_SECOND_HALF_CAPITALIZED": [
-    [1, "Cliff"], // ?
+    [1, "Brook"],
+    [1, "Cliff"],
     [1, "Chester"],
     [1, "Cross"],
     [1, "Don"],
     [1, "Grove"],
     [1, "Ham"],
-    [1, "Water"]
+    [1, "Water"],
+    [1, "Worth"]
   ],
   "@PLACE_FIRST_OR_SECOND_HALF_LOWERCASE": [
-    [1, "cliff"], // ?
+    [1, "brook"],
+    [1, "cliff"],
     [1, "chester"],
     [1, "cross"],
     [1, "don"],
     [1, "grove"],
     [1, "ham"],
-    [1, "water"]
+    [1, "water"],
+    [1, "worth"]
   ],
   "@PLACE_FIRST_HALF":[
     [1, "Ar"],
@@ -146,14 +143,10 @@ var grammar = {
     [1, "Ast"],
     [1, "Bering"],
     [1, "Ben"],
-    [1, "Billing"], // ?
-    [1, "Blake"], // ?
-    [1, "Bol"], // ?
+    [1, "Billing"],
     [1, "Briar"],
     [1, "Bridge"],
-    [1, "Bright"], // ?
-    [1, "Brook"], // ?
-    [1, "Cad"],
+    [1, "Bright"],
     [1, "Chat"],
     [1, "Cleve"],
     [1, "Cran"],
@@ -162,22 +155,22 @@ var grammar = {
     [1, "Dun"],
     [1, "East"],
     [1, "Edge"],
-    [1, "El"], // ?
+    [1, "El"],
     [1, "Engle"],
     [1, "Ens"],
     [1, "Evering"],
     [1, "Fern"],
-    [1, "Fiddle"], // ?
-    [1, "Grey"], // ?
-    [1, "Hamp"], // ?
+    [1, "Fiddle"],
+    [1, "Grey"],
+    [1, "Hamp"],
     [1, "Hart"],
+    [1, "Harrow"],
     [1, "Haw"],
     [1, "Hazel"],
     [1, "Hid"],
     [1, "High"],
     [1, "Hog"],
-    [1, "Hol"], // ?
-    [1, "Holt"],
+    [1, "Hol"],
     [1, "Isling"],
     [1, "King"],
     [1, "Kirk"],
@@ -193,13 +186,11 @@ var grammar = {
     [1, "Oak"],
     [1, "Over"],
     [1, "Rams"],
-    [1, "Reed"], // ?
     [1, "Riddle"],
-    [1, "Row"], // ?
+    [1, "Row"],
     [1, "Sandi"],
     [1, "Saw"],
     [1, "Sher"],
-    [1, "Somer"], // ?
     [1, "South"],
     [1, "Still"],
     [1, "West"],
@@ -207,8 +198,7 @@ var grammar = {
     [1, "Wilder"],
     [1, "Windle"],
     [1, "Winning"],
-    [1, "Wind"],
-    [1, "Worth"]
+    [1, "Wind"]
   ],
   "@PLACE_SECOND_HALF":[
     [1, "beck"],
@@ -219,12 +209,11 @@ var grammar = {
     [1, "by"],
     [1, "cote"],
     [1, "combe"],
-    [1, "court"], // ?
     [1, "croft"],
     [1, "dale"],
     [1, "den"],
-    [1, "end"], // ?
-    [1, "endon"], // ?
+    [1, "end"],
+    [1, "endon"],
     [1, "field"],
     [1, "ford"],
     [1, "gate"],
@@ -235,7 +224,6 @@ var grammar = {
     [1, "leigh"],
     [1, "ley"],
     [1, "low"],
-    [1, "market"],
     [1, "more"],
     [1, "ridge"],
     [1, "shaw"],
@@ -255,9 +243,9 @@ var grammar = {
     [3, "Hall"],
     [3, "House"],
     [3, "Park"],
-    [1, "Court"], //?
-    [1, "Estate"], //?
-    [1, "Manor"] //?
+    [1, "Court"],
+    [1, "Estate"],
+    [1, "Manor"]
   ],
   "@PLACE_FULL_NAME": [
     [1, "Anglesey"],
