@@ -243,9 +243,10 @@ var grammar = {
     [3, "Hall"],
     [3, "House"],
     [3, "Park"],
-    [1, "Court"],
+    [2, "Court"],
     [1, "Estate"],
-    [1, "Manor"]
+    [1, "Manor"],
+    [1, "Cottage"]
   ],
   "@PLACE_FULL_NAME": [
     [1, "Anglesey"],
